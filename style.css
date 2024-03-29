@@ -1,0 +1,84 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Navegação*/
+nav{
+  background-color: #61310e;
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.div-logo{
+  height: 70px;
+  width: 150px;
+  margin-left: 20px;
+  background-color: aliceblue;
+}
+#div-user{
+  height: 50px;
+  width: 50px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgUser{
+  border-radius: 50%;
+}
+#nomeUser{
+  color: #fff;
+  font: bold 15px Arial;
+  
+}
+
+
+/*Section*/
+body{
+  background-color: #95fbff;
+}
+#section-main{
+  background-color: #efdcc2;
+  width: 85vw;
+  height: auto;
+  margin: auto;
+  padding-bottom: 50px;
+}
+h2{
+  margin-left: 40px;
+  padding-top: 40px;
+}
+.div-a{
+  margin-top: 30px;
+  text-align: right;
+  margin-right: 40px;
+}
+.div-fichas{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.fichaPersonagem{
+  display: flex;
+  flex-direction: column;
+}
+.contPersonagem{
+  height: 300px;
+  width: 200px;
+  background-color: aliceblue;
+}.fichaCriaturas{
+  display: flex;
+  flex-direction: column;
+}
+.contCriaturas{
+  height: 300px;
+  width: 200px;
+  background-color: rgb(90, 90, 90);
+}
+p{
+  margin: auto;
+}
