@@ -1,23 +1,23 @@
-*{
+* {
   margin: 0px;
   padding: 0px;
 }
 
 /*Navegação*/
-nav{
+nav {
   background-color: #61310e;
   height: 130px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.div-logo{
+.div-logo {
   height: 70px;
   width: 150px;
   margin-left: 20px;
   background-color: aliceblue;
 }
-#div-user{
+#div-user {
   height: 50px;
   width: 50px;
   margin-right: 40px;
@@ -25,60 +25,108 @@ nav{
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
 }
 
-.imgUser{
+.imgUser {
   border-radius: 50%;
 }
-#nomeUser{
+#nomeUser {
   color: #fff;
   font: bold 15px Arial;
-  
+  cursor: pointer;
 }
-
-
+#div-opcoesUsuario {
+  background-color: rgb(156, 156, 156);
+  height: auto;
+  width: 300px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  top: 130px;
+  visibility: hidden;
+}
+#div-opcoesUsuario > a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+}
 /*Section*/
-body{
+body {
   background-color: #95fbff;
 }
-#section-main{
+#section-main {
   background-color: #efdcc2;
   width: 85vw;
   height: auto;
   margin: auto;
   padding-bottom: 50px;
 }
-h2{
+h2 {
   margin-left: 40px;
   padding-top: 40px;
 }
-.div-a{
+.div-a {
   margin-top: 30px;
   text-align: right;
   margin-right: 40px;
+  padding-bottom: 10px;
 }
-.div-fichas{
+.seeMore {
+  text-decoration: none;
+}
+
+.div-fichas {
   display: flex;
   justify-content: space-evenly;
 }
 
-.fichaPersonagem{
+.fichaPersonagem {
   display: flex;
   flex-direction: column;
 }
-.contPersonagem{
+.contPersonagem {
   height: 300px;
   width: 200px;
   background-color: aliceblue;
-}.fichaCriaturas{
+}
+.fichaCriaturas {
   display: flex;
   flex-direction: column;
 }
-.contCriaturas{
+.contCriaturas {
   height: 300px;
   width: 200px;
   background-color: rgb(90, 90, 90);
 }
-p{
+p {
   margin: auto;
+}
+
+/*?Ficha de Personagem*/
+#section-criarPersonagem {
+  background-color: #efdcc2;
+  width: 85vw;
+  height: auto;
+  margin: auto;
+  padding-bottom: 50px;
+}
+.div-titulo {
+  display: flex;
+  justify-content: center;
+}
+#tituloPersonagem {
+  font: bold 32px Arial;
+  font-weight: 800;
+}
+.imgPersonagem {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+.preencher {
+  height: 30px;
 }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sistema de RPG</title>
+  </head>
+  <body>
+    <nav>
+      <div class="div-logo">
+        <img src="#" />
+      </div>
+
+      <div id="div-user">
+        <div class="imgUser">
+          <img class="imgUser" src="fox-folk.png" onclick="opcoesUsuario()" />
+        </div>
+
+        <p id="nomeUser" onclick="opcoesUsuario()">Nome:</p>
+      </div>
+      <div id="div-opcoesUsuario">
+        <a href="#">lorem</a>
+        <a href="#">lorem</a>
+        <a href="#">lorem</a>
+        <a href="#">lorem</a>
+        <a href="#">lorem</a>
+        <a href="#">lorem</a>
+      </div>
+    </nav>
+
+    <section id="section-criarPersonagem">
+      <div class="div-titulo">
+        <h1 id="tituloPersonagem">Ficha de Personagem</h1>
+      </div>
+      <form action="#">
+        <div class="contCriarPersonagem">
+          <div class="imgPersonagem">
+            <img class="imgPersonagem" src="fox-folk.png" />
+            <input
+              class="preencher"
+              type="text"
+              placeholder="Nome do Personagem"
+            />
+
+            <select name="selecionarRaca" id="selecionarRaca">
+              <option value="valor1">Raca1</option>
+            </select>
+          </div>
+        </div>
+      </form>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
