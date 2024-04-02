@@ -34,21 +34,74 @@
         <h1 id="tituloPersonagem">Ficha de Personagem</h1>
       </div>
       <form action="#">
-        <div class="contCriarPersonagem">
+        <div id="contCriarPersonagem">
           <div class="imgPersonagem">
             <img class="imgPersonagem" src="fox-folk.png" />
+          </div>
+          <div id="div-preencherAtributos">
             <input
               class="preencher"
               type="text"
               placeholder="Nome do Personagem"
             />
-
+             <select name="selecionarLegado" id="selecionarLegado">
+              <option value="legado1">Legado 1</option>
+              <option value="legado2">Legado 2</option>
+              <option value="legado3">Legado 3</option>
+              <option value="legado4">Legado 4</option>
+              <option value="legado5">Legado 5</option>
+              <option value="legado6">Legado 6</option>
+             </select>
+            
             <select name="selecionarRaca" id="selecionarRaca">
-              <option value="valor1">Raca1</option>
+              <option value="valor1">Raça 1</option>
+              <option value="valor2">Raça 2</option>
+              <option value="valor3">Raça 3</option>
+              <option value="valor4">Raça 4</option>
+              <option value="valor5">Raça 5</option>
+              <option value="valor6">Raça 6</option>
+              <option value="valor7">Raça 7</option>
+              <option value="valor8" >outro</option>
             </select>
+          <div class="div-pontosGerais">
+            <label for="PV">Pontos de Vida: </label>
+            <input type="text" id="PV" class="pontosGerais">
+            
+            <label for="PE">Pontos de Energia: </label>
+            <input type="text" id="PE" class="pontosGerais">
+
+            <label for="PdA">Pontos de Aprendizado</label>
+            <input type="text" id="PdA" class="pontosGerais">
+          </div>
+
+          <div id="divChecks">
+            <div id="exaustao">
+            <p id="exaustao">Exaustao</p>
+            <input type="checkbox" name="checkExaustao1" id="checkExaustao1">
+            <input type="checkbox" name="checkExaustao2" id="checkExaustao2">
+            <input type="checkbox" name="checkExaustao3" id="checkExaustao3">
+            <input type="checkbox" name="checkExaustao4" id="checkExaustao4">
+            <input type="checkbox" name="checkExaustao5" id="checkExaustao5">
+          </div>
+          <div id="div-dadosDeMorte">
+          
+            <div id="div-dadiva">
+              <p id="p-dadiva">Dádiva</p>
+              <input type="checkbox" name="checkDadiva" id="checkDadiva1">
+              <input type="checkbox" name="checkDadiva" id="checkDadiva2">
+            </div>
+            <p>X</p>
+            <div id="div-morte">
+              <input type="checkbox" name="checkMorte" id="checkMorte1">
+              <input type="checkbox" name="checkMorte" id="checkMorte2">
+              <p id="p-morte">Morte</p>
+            </div>
+          </div>
           </div>
         </div>
-      </form>
+     
+          </div>
+           </form>  
     </section>
     <script src="script.js"></script>
   </body>

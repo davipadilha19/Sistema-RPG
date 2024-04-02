@@ -86,7 +86,7 @@ h2 {
 
 .fichaPersonagem {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 .contPersonagem {
   height: 300px;
@@ -129,4 +129,58 @@ p {
 }
 .preencher {
   height: 30px;
+}
+#contCriarPersonagem{
+  display: flex;
+  justify-content: space-evenly;
+}
+#div-preencherAtributos{
+  display: flex;
+  flex-direction: column;
+}
+.div-pontosGerais{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+.pontosGerais{
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  text-align: center;
+  background-image: url(/escudo-removebg-preview\(1\).png);
+  background-position: center;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  outline: none;
+}
+#divChecks{
+  display: flex;
+  justify-content: space-evenly ;
+}
+#div-dadosDeMorte{
+  display: flex;
+  justify-content: space-evenly;
+  width: 800px;
+  margin: auto;
+  margin-top: 5px;
+}
+#exaustao{
+  margin: auto;
+}
+#div-dadiva{
+  display: flex;
+}
+#p-dadiva{
+  margin-right: 20px;
+}
+#p-morte{
+  margin-left: 20px;
+}
+#div-morte{
+  display: flex;
+}
+input[type="checkbox"]{
+  background-color: #000;
 }
