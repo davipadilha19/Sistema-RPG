@@ -86,7 +86,7 @@ h2 {
 
 .fichaPersonagem {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
 }
 .contPersonagem {
   height: 300px;
@@ -183,4 +183,100 @@ p {
 }
 input[type="checkbox"]{
   background-color: #000;
+}
+
+/*! Ficha de Criatura*/
+#section-criarCriatura{
+  background-color: #efdcc2;
+  width: 85vw;
+  height: auto;
+  margin: auto;
+  padding-bottom: 50px;
+}
+#tituloCriatura {
+  font: bold 32px Arial;
+  font-weight: 800;
+}
+.imgCriatura {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+.preencherCriatura {
+  height: 50px;
+  width: 500px;
+  background-color: #d6c975;
+  border: none;
+  margin-top: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+}
+
+#contCriarCriatura{
+  display: flex;
+  justify-content: space-evenly;
+}
+#div-preencherAtributos{
+  display: flex;
+  flex-direction: column;
+}
+.div-parametrosCriatura{
+  display: flex;
+  justify-content: space-evenly;
+}
+.parametrosCriatura{
+  display: flex;
+  align-items: center;
+  height: 70px;
+  margin-top: 20px;
+}
+.preencherCriatura2 {
+  height: 70px;
+  width: 70px;
+  margin-left: 20px;
+  font-size: x-large;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.pontosGeraisCriatura{
+  display: flex;
+}
+select{
+  height: 30px;
+  width: 100px;
+  background-color: #d6c975;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 30px;
+}
+textarea{
+  width: 500px;
+  background-color: #d6c975;
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  text-align: center;
+  resize: none;
+  font-weight: 600
+}
+#submit{
+  text-align: right;
+  margin-top: 20px;
+}
+input[type="submit"]{
+  height: 40px;
+  width: 70px;
+  border: none;
+  border-radius: 10px;
+  background-color: #95d15d;
+  font-weight: 900;
+}
+input[type="submit"]:hover{
+  background-color: #648c3e;
+  color: #fff;
+  transform: scale(1.1);
 }

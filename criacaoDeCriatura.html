@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sistema de RPG</title>
+  </head>
+  <body>
+    <nav>
+      <div class="div-logo">
+        <img src="#" />
+      </div>
+
+      <div id="div-user">
+        <div class="imgUser">
+          <img class="imgUser" src="fox-folk.png" onclick="opcoesUsuario()" />
+        </div>
+
+        <p id="nomeUser" onclick="opcoesUsuario()">Nome:</p>
+      </div>
+      <div id="div-opcoesUsuario">
+        <a href="#">lorem</a>
+        <a href="#">lorem</a>
+        <a href="#">lorem</a>
+        <a href="index.html">Menu</a>
+        <a href="criacaoDeCriatura.html">Criar Criatura</a>
+        <a href="criacaoDePersonagens.html">Criar Personagem</a>
+      </div>
+    </nav>
+
+    <section id="section-criarCriatura">
+      <form action="#">
+      <div id="contCriarCriatura">
+        <div class="imgCriatura">
+          <img class="imgCriatura" src="fox-folk.png" />
+        </div>
+        <div id="div-preencherAtributos">
+          <input
+            class="preencherCriatura"
+            type="text"
+            placeholder="Nome do Personagem"
+          />
+
+          <div class="div-parametrosCriatura">
+            <div class="parametrosCriatura">  
+            <p>Ofensivos: </p>
+            <input type="text" class="preencherCriatura2">
+            </div>
+
+            <div class="parametrosCriatura">
+              <p>Defensivo: </p>
+            <input type="text" class="preencherCriatura2">
+            </div>
+            <div class="parametrosCriatura">
+              <p>Poder: </p>
+            <input type="text" class="preencherCriatura2">
+            </div>
+            
+            </div>
+          
+
+            <div class="div-pontosGerais">
+              
+            <div class="pontosGeraisCriatura">
+              <p>PV Temporario: </p>
+              <input type="text" class="preencherCriatura2">
+            </div>
+              
+            <div class="pontosGeraisCriatura">
+              <p>Movimentação: </p>
+              <input type="text" class="preencherCriatura2">
+            </div>
+
+            </div>
+          
+
+            <div class="div-pontosGerais">
+              
+            <div class="pontosGeraisCriatura">
+              <p>Dificuldade: </p>
+              <select name="Dificuldade" id="dificuldade">
+                <option value="easy">Fácil</option>
+                <option value="Moderado">Moderado</option>
+                <option value="Hard">Dificil</option>
+                <option value="Extremo">Extremo</option>
+              </select>
+            </div>
+              
+            <div class="pontosGeraisCriatura">
+              <p>Livro: </p>
+              <select name="Livro" id="livro" class="selecionarOpcaoCriatura">
+                <option value="livro1">livro1</option>
+                <option value="livro2">livro2</option>
+              </select>
+            </div>
+
+            </div>
+          
+
+            <div class="div-pontosGerais">
+              
+            <div class="pontosGeraisCriatura">
+              <p>Ataque Físico: </p>
+              <input type="text" class="preencherCriatura2">
+            </div>
+              
+            <div class="pontosGeraisCriatura">
+              <p>Ataque Mágico: </p>
+              <input type="text" class="preencherCriatura2">
+            </div>
+
+            </div>
+          
+
+            <div class="div-pontosGerais">
+              
+            <div class="pontosGeraisCriatura">
+              <p>Arm. Natural: </p>
+              <input type="text" class="preencherCriatura2">
+            </div>
+              
+            <div class="pontosGeraisCriatura">
+              <p>Arm. Mistica: </p>
+              <input type="text" class="preencherCriatura2">
+            </div>
+
+            </div>
+          
+
+            <div id="Caracteristicas">
+              <textarea name="Caracteristicas" id="caracteristicasCriatura" cols="30" rows="10"></textarea>
+            </div> 
+            <div id="submit">
+            <input type="submit" value="Criar">
+          </div>
+          </div>
+
+         
+          
+           </form>  
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
