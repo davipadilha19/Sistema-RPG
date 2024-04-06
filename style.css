@@ -6,7 +6,7 @@
 /*Navegação*/
 nav {
   background-color: #61310e;
-  height: 130px;
+  height: 14vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,6 +15,7 @@ nav {
   height: 70px;
   width: 150px;
   margin-left: 20px;
+  background-color: aliceblue;
 }
 #div-user {
   height: 50px;
@@ -129,20 +130,20 @@ p {
 .preencher {
   height: 30px;
 }
-#contCriarPersonagem {
+#contCriarPersonagem{
   display: flex;
   justify-content: space-evenly;
 }
-#div-preencherAtributos {
+#div-preencherAtributos{
   display: flex;
   flex-direction: column;
 }
-.div-pontosGerais {
+.div-pontosGerais{
   display: flex;
   justify-content: space-evenly;
   margin-top: 10px;
 }
-.pontosGerais {
+.pontosGerais{
   width: 30px;
   height: 30px;
   margin-right: 20px;
@@ -154,38 +155,38 @@ p {
   border: none;
   outline: none;
 }
-#divChecks {
+#divChecks{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-evenly ;
 }
-#div-dadosDeMorte {
+#div-dadosDeMorte{
   display: flex;
   justify-content: space-evenly;
   width: 800px;
   margin: auto;
   margin-top: 5px;
 }
-#exaustao {
+#exaustao{
   margin: auto;
 }
-#div-dadiva {
+#div-dadiva{
   display: flex;
 }
-#p-dadiva {
+#p-dadiva{
   margin-right: 20px;
 }
-#p-morte {
+#p-morte{
   margin-left: 20px;
 }
-#div-morte {
+#div-morte{
   display: flex;
 }
-input[type="checkbox"] {
+input[type="checkbox"]{
   background-color: #000;
 }
 
 /*! Ficha de Criatura*/
-#section-criarCriatura {
+#section-criarCriatura{
   background-color: #efdcc2;
   width: 85vw;
   height: auto;
@@ -212,19 +213,19 @@ input[type="checkbox"] {
   font-weight: 600;
 }
 
-#contCriarCriatura {
+#contCriarCriatura{
   display: flex;
   justify-content: space-evenly;
 }
-#div-preencherAtributos {
+#div-preencherAtributos{
   display: flex;
   flex-direction: column;
 }
-.div-parametrosCriatura {
+.div-parametrosCriatura{
   display: flex;
   justify-content: space-evenly;
 }
-.parametrosCriatura {
+.parametrosCriatura{
   display: flex;
   align-items: center;
   height: 70px;
@@ -240,10 +241,10 @@ input[type="checkbox"] {
   text-align: center;
 }
 
-.pontosGeraisCriatura {
+.pontosGeraisCriatura{
   display: flex;
 }
-select {
+select{
   height: 30px;
   width: 100px;
   background-color: #d6c975;
@@ -252,7 +253,7 @@ select {
   text-align: center;
   margin-left: 30px;
 }
-textarea {
+textarea{
   width: 500px;
   background-color: #d6c975;
   border: none;
@@ -260,13 +261,13 @@ textarea {
   margin-top: 20px;
   text-align: center;
   resize: none;
-  font-weight: 600;
+  font-weight: 600
 }
-#submit {
+#submit{
   text-align: right;
   margin-top: 20px;
 }
-input[type="submit"] {
+input[type="submit"]{
   height: 40px;
   width: 70px;
   border: none;
@@ -274,31 +275,68 @@ input[type="submit"] {
   background-color: #95d15d;
   font-weight: 900;
 }
-input[type="submit"]:hover {
+input[type="submit"]:hover{
   background-color: #648c3e;
   color: #fff;
   transform: scale(1.1);
 }
-/*? Ver mais Personagens*/
-#section-allPersonagem {
-  background-color: #efdcc2;
-  width: 85vw;
-  height: auto;
-  margin: auto;
-  padding-bottom: 50px;
-}
-h2 {
-  margin-bottom: 20px;
-}
-.fichaPersonagemAllP {
-  margin-bottom: 20px;
-  text-align: center;
-  font-weight: 900;
+
+/** Combate*/
+
+#menuIcon{
+  height: 50px;
+  background-color: #fff;
+  border-radius: 5px;
 }
 
-/*! Ver mais Criaturas*/
-.fichaCriaturaAllC {
-  margin-bottom: 20px;
-  text-align: center;
-  font-weight: 900;
+#div-opcoesCombate {
+  background-color: rgb(156, 156, 156);
+  height: auto;
+  width: 300px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  top: 130px;
+  visibility: hidden;
+}
+#div-opcoesCombate > a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+}
+#div-opcoesCombate > p {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#section-combate{
+  background-color: #648c3e;
+  width: 100vw;
+  height: 86vh;
+}
+#iniciativa{
+  background-color: #d6c975;
+  width: 100vw;
+  height: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.iniciativaJogadores{
+  background-color: cadetblue;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+}
+.iniciativaJogadores:first-child{
+  filter: drop-shadow(0px 0px 10px #95fbff ;
+}
+#combate{
+  display: flex;
+  justify-content: space-evenly;
 }

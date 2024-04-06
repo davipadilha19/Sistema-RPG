@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css" />
+    <title>Sistema de RPG</title>
+  </head>
+  <body>
+    <nav>
+      <div class="div-logo">
+        <img src="#" />
+      </div>
+
+      <div id="div-user">
+          <img id= "menuIcon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAATElEQVRIS2NkoDFgpLH5DKMWEAzhAQmi/wSdhV8BiqOx+YDmFlDoAVTtAxIHNPcBzeOA5hbQPIiGvgU0jwOaWzD042DUByghQPPSFABt6AYZfO/+XQAAAABJRU5ErkJggg==" onclick="opcoesCombate()"/>
+       
+      </div>
+      <div id="div-opcoesCombate">
+        <a href="index.html">Menu</a>
+        <p onclick="adicionarInimigo()">Adicionar Inimigo</p>
+        <p onclick="adicionarCombatente()">Adicionar Combatente</p>
+        <a href="#">lorem</a>
+        <a href="#">lorem</a>
+        <a href="#">lorem</a>
+      </div>
+    </nav>
+
+    <section id="section-combate">
+        <!--? Iniciativa open-->
+        <div id="iniciativa">
+          <div class="iniciativaJogadores"></div>
+          <div class="iniciativaJogadores"></div>
+          <div class="iniciativaJogadores"></div>
+          <div class="iniciativaJogadores"></div>
+        </div>
+        <!--? Iniciativa close-->
+      <div id="combate">
+
+        <!--! Inimigos open-->
+        <div id="areaInimigos">
+
+        </div>
+        <!--! inimigo Close-->
+
+        <!--* Combatente open-->
+        <div id="areaCombatentes">
+
+        </div>
+        <!--* Combatennte close-->
+      </div>
+
+      
+       
+    </section>
+    <script src="scriptCombate.js"></script>
+  </body>
+</html>
