@@ -15,7 +15,6 @@ nav {
   height: 70px;
   width: 150px;
   margin-left: 20px;
-  background-color: aliceblue;
 }
 #div-user {
   height: 50px;
@@ -30,6 +29,7 @@ nav {
 
 .imgUser {
   border-radius: 50%;
+  height: 99%;
 }
 #nomeUser {
   color: #fff;
@@ -46,7 +46,7 @@ nav {
   align-items: center;
   position: absolute;
   right: 20px;
-  top: 130px;
+  top: 84px;
   visibility: hidden;
 }
 #div-opcoesUsuario > a {
@@ -130,20 +130,20 @@ p {
 .preencher {
   height: 30px;
 }
-#contCriarPersonagem{
+#contCriarPersonagem {
   display: flex;
   justify-content: space-evenly;
 }
-#div-preencherAtributos{
+#div-preencherAtributos {
   display: flex;
   flex-direction: column;
 }
-.div-pontosGerais{
+.div-pontosGerais {
   display: flex;
   justify-content: space-evenly;
   margin-top: 10px;
 }
-.pontosGerais{
+.pontosGerais {
   width: 30px;
   height: 30px;
   margin-right: 20px;
@@ -155,38 +155,38 @@ p {
   border: none;
   outline: none;
 }
-#divChecks{
+#divChecks {
   display: flex;
-  justify-content: space-evenly ;
+  justify-content: space-evenly;
 }
-#div-dadosDeMorte{
+#div-dadosDeMorte {
   display: flex;
   justify-content: space-evenly;
   width: 800px;
   margin: auto;
   margin-top: 5px;
 }
-#exaustao{
+#exaustao {
   margin: auto;
 }
-#div-dadiva{
+#div-dadiva {
   display: flex;
 }
-#p-dadiva{
+#p-dadiva {
   margin-right: 20px;
 }
-#p-morte{
+#p-morte {
   margin-left: 20px;
 }
-#div-morte{
+#div-morte {
   display: flex;
 }
-input[type="checkbox"]{
+input[type="checkbox"] {
   background-color: #000;
 }
 
 /*! Ficha de Criatura*/
-#section-criarCriatura{
+#section-criarCriatura {
   background-color: #efdcc2;
   width: 85vw;
   height: auto;
@@ -213,19 +213,19 @@ input[type="checkbox"]{
   font-weight: 600;
 }
 
-#contCriarCriatura{
+#contCriarCriatura {
   display: flex;
   justify-content: space-evenly;
 }
-#div-preencherAtributos{
+#div-preencherAtributos {
   display: flex;
   flex-direction: column;
 }
-.div-parametrosCriatura{
+.div-parametrosCriatura {
   display: flex;
   justify-content: space-evenly;
 }
-.parametrosCriatura{
+.parametrosCriatura {
   display: flex;
   align-items: center;
   height: 70px;
@@ -241,10 +241,10 @@ input[type="checkbox"]{
   text-align: center;
 }
 
-.pontosGeraisCriatura{
+.pontosGeraisCriatura {
   display: flex;
 }
-select{
+select {
   height: 30px;
   width: 100px;
   background-color: #d6c975;
@@ -253,7 +253,7 @@ select{
   text-align: center;
   margin-left: 30px;
 }
-textarea{
+textarea {
   width: 500px;
   background-color: #d6c975;
   border: none;
@@ -261,13 +261,13 @@ textarea{
   margin-top: 20px;
   text-align: center;
   resize: none;
-  font-weight: 600
+  font-weight: 600;
 }
-#submit{
+#submit {
   text-align: right;
   margin-top: 20px;
 }
-input[type="submit"]{
+input[type="submit"] {
   height: 40px;
   width: 70px;
   border: none;
@@ -275,7 +275,7 @@ input[type="submit"]{
   background-color: #95d15d;
   font-weight: 900;
 }
-input[type="submit"]:hover{
+input[type="submit"]:hover {
   background-color: #648c3e;
   color: #fff;
   transform: scale(1.1);
@@ -283,7 +283,7 @@ input[type="submit"]:hover{
 
 /** Combate*/
 
-#menuIcon{
+#menuIcon {
   height: 50px;
   background-color: #fff;
   border-radius: 5px;
@@ -299,7 +299,7 @@ input[type="submit"]:hover{
   align-items: center;
   position: absolute;
   right: 20px;
-  top: 130px;
+  top: 84px;
   visibility: hidden;
 }
 #div-opcoesCombate > a {
@@ -314,12 +314,12 @@ input[type="submit"]:hover{
   cursor: pointer;
 }
 
-#section-combate{
+#section-combate {
   background-color: #648c3e;
   width: 100vw;
   height: 86vh;
 }
-#iniciativa{
+#iniciativa {
   background-color: #d6c975;
   width: 100vw;
   height: 20%;
@@ -327,16 +327,136 @@ input[type="submit"]:hover{
   justify-content: space-evenly;
   align-items: center;
 }
-.iniciativaJogadores{
-  background-color: cadetblue;
-  height: 130px;
-  width: 130px;
+.iniciativaJogadores {
+  background-color: #5f9ea0;
+  height: 80%;
+  width: 6%;
   border-radius: 50%;
+  cursor: pointer;
 }
-.iniciativaJogadores:first-child{
-  filter: drop-shadow(0px 0px 10px #95fbff ;
+
+#combate {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-#combate{
+
+#areaInimigos {
   display: flex;
   justify-content: space-evenly;
+  width: 100vw;
+  position: absolute;
+  top: 34vh;
+}
+.nomeInimigo {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+.geralInimigo {
+  background-color: #5b0000;
+  height: 120px;
+  width: calc(100px * 3);
+  border-radius: 40px;
+  border: #000 solid 3px;
+  cursor: pointer;
+}
+.inimigos {
+  display: flex;
+  align-items: center;
+}
+.div-imagemInimigoArea {
+  margin-left: 5px;
+}
+.div-imagemInimigoArea > img {
+  border-radius: 50%;
+}
+.div-atributosInimigo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+.atributosInimigo {
+  display: flex;
+}
+.atributosInimigo > div {
+  color: #fff;
+  font-weight: 700;
+  margin-left: 20%;
+}
+.div-pvInimigo {
+  width: 100px;
+  height: 20px;
+  border: #000 solid 2px;
+  background-color: #b90000;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 5px;
+  text-align: center;
+  font-weight: 600;
+  color: #0c0c0c;
+}
+#areaCombatentes {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+  position: absolute;
+  bottom: 20px;
+}
+.nomeCombatenteArea {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+.geralCombatente {
+  background-color: #163a00;
+  height: 120px;
+  width: calc(100px * 3);
+  border-radius: 40px;
+  border: #000 solid 3px;
+  cursor: pointer;
+}
+.Combatente {
+  display: flex;
+  align-items: center;
+}
+.div-imagemCombatenteArea {
+  margin-left: 5px;
+}
+.div-imagemCombatenteArea > img {
+  border-radius: 50%;
+}
+.div-atributosCombatente {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+.atributosCombatente {
+  display: flex;
+}
+.atributosCombatente > div {
+  color: #fff;
+  font-weight: 700;
+  margin-left: 20%;
+}
+.div-pvCombatente {
+  width: 100px;
+  height: 20px;
+  border: #000 solid 2px;
+  background-color: #0f6700;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 5px;
+  text-align: center;
+  font-weight: 600;
+  color: #0c0c0c;
+}
+#div-visualizarPersonagem {
+  background-color: #2f6264;
+  height: 75vh;
+  width: 30vw;
+  position: absolute;
+  top: 20vh;
+  left: 35vw;
+  visibility: hidden;
 }

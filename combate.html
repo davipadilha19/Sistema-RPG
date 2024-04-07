@@ -3,19 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Sistema de RPG</title>
   </head>
   <body>
     <nav>
       <div class="div-logo">
-        <img src="#" />
+        <img class="div-logo" src="gaia.png" />
       </div>
 
       <div id="div-user">
-          <img id= "menuIcon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAATElEQVRIS2NkoDFgpLH5DKMWEAzhAQmi/wSdhV8BiqOx+YDmFlDoAVTtAxIHNPcBzeOA5hbQPIiGvgU0jwOaWzD042DUByghQPPSFABt6AYZfO/+XQAAAABJRU5ErkJggg==" onclick="opcoesCombate()"/>
-       
+        <img
+          id="menuIcon"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAATElEQVRIS2NkoDFgpLH5DKMWEAzhAQmi/wSdhV8BiqOx+YDmFlDoAVTtAxIHNPcBzeOA5hbQPIiGvgU0jwOaWzD042DUByghQPPSFABt6AYZfO/+XQAAAABJRU5ErkJggg=="
+          onclick="opcoesCombate()"
+        />
       </div>
       <div id="div-opcoesCombate">
         <a href="index.html">Menu</a>
@@ -28,31 +34,181 @@
     </nav>
 
     <section id="section-combate">
-        <!--? Iniciativa open-->
-        <div id="iniciativa">
-          <div class="iniciativaJogadores"></div>
-          <div class="iniciativaJogadores"></div>
-          <div class="iniciativaJogadores"></div>
-          <div class="iniciativaJogadores"></div>
-        </div>
-        <!--? Iniciativa close-->
+      <!--? Iniciativa open-->
+      <div id="iniciativa">
+        <div class="iniciativaJogadores"></div>
+        <div class="iniciativaJogadores"></div>
+        <div class="iniciativaJogadores"></div>
+        <div class="iniciativaJogadores"></div>
+        <div class="iniciativaJogadores"></div>
+        <div class="iniciativaJogadores"></div>
+      </div>
+      <!--? Iniciativa close-->
       <div id="combate">
-
         <!--! Inimigos open-->
         <div id="areaInimigos">
+          <div class="geralInimigo">
+            <div class="nomeInimigo">
+              <h1>Nome Inimigo</h1>
+            </div>
+            <div class="inimigos" onclick="visualizar()">
+              <div class="div-imagemInimigoArea">
+                <img src="fox-folk.png" alt="" />
+              </div>
+              <div class="div-atributosInimigo">
+                <div class="atributosInimigo">
+                  <div>atributo:</div>
+                  <div>atributo:</div>
+                </div>
+                <div class="atributosInimigo">
+                  <div>atributo:</div>
+                  <div>atributo:</div>
+                </div>
+                <div class="atributosInimigo">
+                  <div>atributo:</div>
+                  <div>atributo:</div>
+                </div>
+              </div>
+            </div>
+            <div class="div-pvInimigo">35/35</div>
+          </div>
 
+          <div class="geralInimigo">
+            <div class="nomeInimigo">
+              <h1>Nome Inimigo</h1>
+            </div>
+            <div class="inimigos" onclick="visualizar()">
+              <div class="div-imagemInimigoArea">
+                <img src="fox-folk.png" alt="" />
+              </div>
+              <div class="div-atributosInimigo">
+                <div class="atributosInimigo">
+                  <div>atributo:</div>
+                  <div>atributo:</div>
+                </div>
+                <div class="atributosInimigo">
+                  <div>atributo:</div>
+                  <div>atributo:</div>
+                </div>
+                <div class="atributosInimigo">
+                  <div>atributo:</div>
+                  <div>atributo:</div>
+                </div>
+              </div>
+            </div>
+            <div class="div-pvInimigo">35/35</div>
+          </div>
+          <div class="geralInimigo">
+            <div class="nomeInimigo">
+              <h1>Nome Inimigo</h1>
+            </div>
+            <div class="inimigos" onclick="visualizar()">
+              <div class="div-imagemInimigoArea">
+                <img src="fox-folk.png" alt="" />
+              </div>
+              <div class="div-atributosInimigo">
+                <div class="atributosInimigo">
+                  <div>atributo:</div>
+                  <div>atributo:</div>
+                </div>
+                <div class="atributosInimigo">
+                  <div>atributo:</div>
+                  <div>atributo:</div>
+                </div>
+                <div class="atributosInimigo">
+                  <div>atributo:</div>
+                  <div>atributo:</div>
+                </div>
+              </div>
+            </div>
+            <div class="div-pvInimigo">35/35</div>
+          </div>
         </div>
         <!--! inimigo Close-->
 
         <!--* Combatente open-->
         <div id="areaCombatentes">
-
+          <div class="geralCombatente">
+            <div class="nomeCombatenteArea">
+              <h1>Nome Inimigo</h1>
+            </div>
+            <div class="Combatente" onclick="visualizar()">
+              <div class="div-imagemCombatenteArea">
+                <img src="fox-folk.png" alt="" />
+              </div>
+              <div class="div-atributosCombatente">
+                <div class="atributosCombatente">
+                  <div>atributo:</div>
+                  <div>atributo:</div>
+                </div>
+                <div class="atributosCombatente">
+                  <div>atributo:</div>
+                  <div>atributo:</div>
+                </div>
+                <div class="atributosCombatente">
+                  <div>atributo:</div>
+                  <div>atributo:</div>
+                </div>
+              </div>
+            </div>
+            <div class="div-pvCombatente">35/35</div>
+          </div>
+          <div class="geralCombatente">
+            <div class="nomeCombatenteArea">
+              <h1>Nome Inimigo</h1>
+            </div>
+            <div class="Combatente" onclick="visualizar()">
+              <div class="div-imagemCombatenteArea">
+                <img src="fox-folk.png" alt="" />
+              </div>
+              <div class="div-atributosCombatente">
+                <div class="atributosCombatente">
+                  <div>atributo:</div>
+                  <div>atributo:</div>
+                </div>
+                <div class="atributosCombatente">
+                  <div>atributo:</div>
+                  <div>atributo:</div>
+                </div>
+                <div class="atributosCombatente">
+                  <div>atributo:</div>
+                  <div>atributo:</div>
+                </div>
+              </div>
+            </div>
+            <div class="div-pvCombatente">35/35</div>
+          </div>
+          <div class="geralCombatente">
+            <div class="nomeCombatenteArea">
+              <h1>Nome Inimigo</h1>
+            </div>
+            <div class="Combatente" onclick="visualizar()">
+              <div class="div-imagemCombatenteArea">
+                <img src="fox-folk.png" alt="" />
+              </div>
+              <div class="div-atributosCombatente">
+                <div class="atributosCombatente">
+                  <div>atributo:</div>
+                  <div>atributo:</div>
+                </div>
+                <div class="atributosCombatente">
+                  <div>atributo:</div>
+                  <div>atributo:</div>
+                </div>
+                <div class="atributosCombatente">
+                  <div>atributo:</div>
+                  <div>atributo:</div>
+                </div>
+              </div>
+            </div>
+            <div class="div-pvCombatente">35/35</div>
+          </div>
         </div>
         <!--* Combatennte close-->
       </div>
 
-      
-       
+      <!--? Area de visualização de Personagem-->
+      <div id="div-visualizarPersonagem"></div>
     </section>
     <script src="scriptCombate.js"></script>
   </body>
