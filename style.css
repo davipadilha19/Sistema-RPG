@@ -458,5 +458,39 @@ input[type="submit"]:hover {
   position: absolute;
   top: 20vh;
   left: 35vw;
-  visibility: hidden;
+  visibility: visible;
+  border-radius: 15px;
+}
+.visualizarPersonagemGeral {
+  visibility: visible;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.div-visualizarImagem > img {
+  border-radius: 50%;
+}
+.div-visualizarAtributos {
+  display: flex;
+  flex-direction: column;
+}
+#raca {
+  margin: auto;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+#raca > div {
+  padding: 20px;
+}
+.visualizarAtributos {
+  display: flex;
+  justify-content: space-evenly; /* Espaçamento entre os atributos */
+}
+
+.visualizarAtributos > div {
+  font-weight: 700;
+  padding: 5px; /* Adicione padding para espaço interno */
 }
