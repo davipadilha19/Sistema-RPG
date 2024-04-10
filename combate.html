@@ -51,7 +51,7 @@
             <div class="nomeInimigo">
               <h1>Nome Inimigo</h1>
             </div>
-            <div class="inimigos" onclick="visualizar()">
+            <div class="inimigos" onclick="visualizarI()">
               <div class="div-imagemInimigoArea">
                 <img src="fox-folk.png" alt="" />
               </div>
@@ -77,7 +77,7 @@
             <div class="nomeInimigo">
               <h1>Nome Inimigo</h1>
             </div>
-            <div class="inimigos" onclick="visualizar()">
+            <div class="inimigos" onclick="visualizarI()">
               <div class="div-imagemInimigoArea">
                 <img src="fox-folk.png" alt="" />
               </div>
@@ -102,7 +102,7 @@
             <div class="nomeInimigo">
               <h1>Nome Inimigo</h1>
             </div>
-            <div class="inimigos" onclick="visualizar()">
+            <div class="inimigos" onclick="visualizarI()">
               <div class="div-imagemInimigoArea">
                 <img src="fox-folk.png" alt="" />
               </div>
@@ -132,7 +132,7 @@
             <div class="nomeCombatenteArea">
               <h1>Nome Inimigo</h1>
             </div>
-            <div class="Combatente" onclick="visualizar()">
+            <div class="Combatente" onclick="visualizarC()">
               <div class="div-imagemCombatenteArea">
                 <img src="fox-folk.png" alt="" />
               </div>
@@ -157,7 +157,7 @@
             <div class="nomeCombatenteArea">
               <h1>Nome Inimigo</h1>
             </div>
-            <div class="Combatente" onclick="visualizar()">
+            <div class="Combatente" onclick="visualizarC()">
               <div class="div-imagemCombatenteArea">
                 <img src="fox-folk.png" alt="" />
               </div>
@@ -182,7 +182,7 @@
             <div class="nomeCombatenteArea">
               <h1>Nome Inimigo</h1>
             </div>
-            <div class="Combatente" onclick="visualizar()">
+            <div class="Combatente" onclick="visualizarC()">
               <div class="div-imagemCombatenteArea">
                 <img src="fox-folk.png" alt="" />
               </div>
@@ -209,33 +209,180 @@
 
       <!--? Area de visualização de Personagem-->
       <div id="div-visualizarPersonagem">
-        <div class="visualizarPersonagemGeral">
-          <h2>Nome Personagem</h2>
-          <div class="div-visualizarImagem">
-            <img src="fox-folk.png" />
+        <div class="informacoesBasicas">
+          <div class="informacoesJogador">
+            <p>Jogador: </p>
+          <p>Personagem: </p>
           </div>
-          <div class="div-visualizarAtributos">
-            <div id="raca">
-              <div>Raça: Lorem</div>
-              <div>Classe: lorem</div>
-              <div>PdA: 10</div>
-            </div>
-            <div class="visualizarAtributos">
-              <div>atributo</div>
-              <div>atributo</div>
-            </div>
+          <div class="informacoesJogador">
+          <p>Legado: </p>
+          <p>PdA: </p>
+          </div>
+          <img class="logo" src="gaia.png" style="height: 150px;">
+        </div>
+        <div id="pontosPersonagem">
+          <div >
+            <table>
+              <th>Nome do Ponto</th>
+              <th>Maximo</th>
+              <th>Atual</th>
+              <th>Temporario</th>
+              <tr>
+                <td>Vida</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Energia</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Exaustão</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
 
-            <div class="visualizarAtributos">
-              <div>atributo</div>
-              <div>atributo</div>
-            </div>
-            <div class="visualizarAtributos">
-              <div>atributo</div>
-              <div>atributo</div>
-            </div>
-          </div>
+            <table style="margin-top: 20px;">
+              <th>Movimentação</th>
+              <th>Bloqueio</th>
+              <tr>
+                <td>5</td>
+                <td>5</td>
+              </tr>
+            </table>
+
+            <table style="margin-top: 20px;">
+              <thead>
+                <th scope="row" colspan="1" wid>Parametros</th>
+              </thead>
+              <tfoot>
+                <th>Nome</th>
+                <th>Valor</th>
+                <tr>
+                  <td>Precisão</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Brutalidade</td>
+                  <td></td>
+                 
+                </tr>
+                <tr>
+                   <td>Destreza</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Agilidade</td>
+                  <td></td>
+                </tr>
+              </tfoot>
+            </table>
+
+            <table style="margin-top: 20px;">
+              <thead>
+                <th scope="row" colspan="1" wid>Conhecimentos</th>
+              </thead>
+              <tfoot>
+                <th>Nome</th>
+                <th>Valor</th>
+                <tr>
+                  <td>Carisma</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>con. Místico</td>
+                  <td></td>
+                 
+                </tr>
+                <tr>
+                   <td>Exploração</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Furtividade</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>História</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Intimidação</td>
+                  <td></td>
+                 
+                </tr>
+                <tr>
+                   <td>Intuição</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Medicina</td>
+                  <td></td>
+                <tr>
+                  <td>Percepção</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Performace</td>
+                  <td></td>
+                 
+                </tr>
+                <tr>
+                   <td>Religião</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Sobrevivência</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Tecnologia</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Vontade</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td style="background-color: #562d0b;   color: #cecece;">Especializações: </td>
+                  <td style="background-color: #562d0b;   color: #cecece;"></td>
+                </tr>
+              </tfoot>
+            </table>
+
+            <table>
+              <th>Armamento</th>
+              <th>Dano</th>
+              <th>Alcance</th>
+              <th>Propriedade</th>
+              <th>Prop.Mística</th>
+
+              <tr>
+                <td>Arco</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+        </div>
+
+        <div class="botao">
+          <button>Ações</button>
+          <button>Inventário</button>
+          <button onclick="visualizarC()">Close</button>
         </div>
       </div>
+
+        <!--! Visualizar Ficha Criatura-->
+        <div class="div-visualizarCriatura">
+
+        </div>
     </section>
     <script src="scriptCombate.js"></script>
   </body>

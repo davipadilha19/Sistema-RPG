@@ -78,7 +78,13 @@ h2 {
 .seeMore {
   text-decoration: none;
 }
-
+#section-allPersonagem{
+  background-color: #efdcc2;
+  width: 85vw;
+  height: auto;
+  margin: auto;
+  padding-bottom: 50px;
+}
 .div-fichas {
   display: flex;
   justify-content: space-evenly;
@@ -93,6 +99,18 @@ h2 {
   width: 200px;
   background-color: aliceblue;
 }
+#div-textAllP{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#section-allCriatura{
+  background-color: #efdcc2;
+  width: 85vw;
+  height: auto;
+  margin: auto;
+  padding-bottom: 50px;
+}
 .fichaCriaturas {
   display: flex;
   flex-direction: column;
@@ -102,6 +120,7 @@ h2 {
   width: 200px;
   background-color: rgb(90, 90, 90);
 }
+
 p {
   margin: auto;
 }
@@ -454,43 +473,76 @@ input[type="submit"]:hover {
 #div-visualizarPersonagem {
   background-color: #2f6264;
   height: 75vh;
-  width: 30vw;
+  width: 50vw;
   position: absolute;
   top: 20vh;
-  left: 35vw;
-  visibility: visible;
+  left: 25vw;
+  visibility: hidden;
   border-radius: 15px;
+  overflow-y: scroll;
 }
-.visualizarPersonagemGeral {
-  visibility: visible;
+p{
+  font-size: x-large;
+  font-family: Arial;
+  color: #fff;
+}
+.informacoesBasicas{
   display: flex;
-  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.informacoesBasicas > img{
+  height: 250px;
+}
+.informacoesJogador{
+  display: flex;
   flex-direction: column;
 }
-.div-visualizarImagem > img {
-  border-radius: 50%;
+table{
+  font-size: x-large;
+  font-family: Arial;
+  color: #cecece;
+  width: 100%;
+  border-collapse: collapse;
 }
-.div-visualizarAtributos {
-  display: flex;
-  flex-direction: column;
-}
-#raca {
-  margin: auto;
-  font-size: 20px;
+th, td{
+  border: #fff 2px solid;
+  text-align: center;
+  background-color: #648c3e;
   font-weight: 700;
-  margin-bottom: 10px;
+}
+th{
+  background-color: #562d0b;
+}
+td{
+  color: #303030;
+}
+.botao{
+  text-align: end;
+  margin-block: 20px;
   display: flex;
   justify-content: space-evenly;
 }
-#raca > div {
-  padding: 20px;
-}
-.visualizarAtributos {
-  display: flex;
-  justify-content: space-evenly; /* Espaçamento entre os atributos */
-}
-
-.visualizarAtributos > div {
+.botao > button{
+  width: 150px;
+  height: 70px;
+  background-color: #19a900;
+  color: #fff;
+  font-size: x-large;
   font-weight: 700;
-  padding: 5px; /* Adicione padding para espaço interno */
+  font-family: Arial;
+  border: none;
+  border-radius: 20px ;
+}
+.div-VisualizarCriatura{
+  background-color: #2f6264;
+  height: 75vh;
+  width: 50vw;
+  position: absolute;
+  top: 20vh;
+  left: 25vw;
+  visibility: hidden;
+  border-radius: 15px;
+  overflow-y: scroll;
 }
