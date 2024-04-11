@@ -78,7 +78,7 @@ h2 {
 .seeMore {
   text-decoration: none;
 }
-#section-allPersonagem{
+#section-allPersonagem {
   background-color: #efdcc2;
   width: 85vw;
   height: auto;
@@ -99,12 +99,12 @@ h2 {
   width: 200px;
   background-color: aliceblue;
 }
-#div-textAllP{
+#div-textAllP {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-#section-allCriatura{
+#section-allCriatura {
   background-color: #efdcc2;
   width: 85vw;
   height: auto;
@@ -471,7 +471,7 @@ input[type="submit"]:hover {
   color: #0c0c0c;
 }
 #div-visualizarPersonagem {
-  background-color: #2f6264;
+  background-color: #053510;
   height: 75vh;
   width: 50vw;
   position: absolute;
@@ -481,50 +481,52 @@ input[type="submit"]:hover {
   border-radius: 15px;
   overflow-y: scroll;
 }
-p{
-  font-size: x-large;
-  font-family: Arial;
-  color: #fff;
-}
-.informacoesBasicas{
+
+.informacoesBasicas {
   display: flex;
   padding: 10px;
   justify-content: space-between;
   margin-top: 10px;
 }
-.informacoesBasicas > img{
+.informacoesBasicas > img {
   height: 250px;
 }
-.informacoesJogador{
+.informacoesJogador {
   display: flex;
   flex-direction: column;
 }
-table{
+.informacoesJogador > p {
+  font-size: x-large;
+  font-family: Arial;
+  color: #fff;
+}
+table {
   font-size: x-large;
   font-family: Arial;
   color: #cecece;
   width: 100%;
   border-collapse: collapse;
+  margin-top: 20px;
 }
-th, td{
+th, td {
   border: #fff 2px solid;
   text-align: center;
   background-color: #648c3e;
   font-weight: 700;
 }
-th{
+th {
   background-color: #562d0b;
 }
-td{
+td {
   color: #303030;
 }
-.botao{
+.botao {
   text-align: end;
   margin-block: 20px;
   display: flex;
   justify-content: space-evenly;
 }
-.botao > button{
+.botao > button {
   width: 150px;
   height: 70px;
   background-color: #19a900;
@@ -533,10 +535,10 @@ td{
   font-weight: 700;
   font-family: Arial;
   border: none;
-  border-radius: 20px ;
+  border-radius: 20px;
 }
-.div-VisualizarCriatura{
-  background-color: #2f6264;
+#div-visualizarCriatura {
+  background-color: #3e0000;
   height: 75vh;
   width: 50vw;
   position: absolute;
@@ -545,4 +547,43 @@ td{
   visibility: hidden;
   border-radius: 15px;
   overflow-y: scroll;
+}
+#div-rolagemDeDados {
+  background-color: #160663;
+  height: 75vh;
+  width: 50vw;
+  position: absolute;
+  top: 20vh;
+  left: 25vw;
+  visibility: hidden;
+  border-radius: 15px;
+}
+#selecaoDeDados {
+  overflow-y: scroll;
+  width: 100%;
+  height: 10vh;
+  background-color: #3c7ce3;
+}
+a {
+  text-decoration: none;
+  color: #cecece;
+}
+#inventario {
+  background-color: #784409;
+  height: 75vh;
+  width: 50vw;
+  position: absolute;
+  top: 20vh;
+  left: 25vw;
+  visibility: visible;
+  border-radius: 15px;
+  overflow: scroll;
+}
+.informacoesInventario {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+.informacoesInventario > img {
+  border-radius: 50%;
 }

@@ -27,7 +27,7 @@
         <a href="index.html">Menu</a>
         <p onclick="adicionarInimigo()">Adicionar Inimigo</p>
         <p onclick="adicionarCombatente()">Adicionar Combatente</p>
-        <a href="#">lorem</a>
+        <p onclick="lancarDado()">Rolagem Dados</p>
         <a href="#">lorem</a>
         <a href="#">lorem</a>
       </div>
@@ -211,17 +211,17 @@
       <div id="div-visualizarPersonagem">
         <div class="informacoesBasicas">
           <div class="informacoesJogador">
-            <p>Jogador: </p>
-          <p>Personagem: </p>
+            <p>Jogador:</p>
+            <p>Personagem:</p>
           </div>
           <div class="informacoesJogador">
-          <p>Legado: </p>
-          <p>PdA: </p>
+            <p>Legado:</p>
+            <p>PdA:</p>
           </div>
-          <img class="logo" src="gaia.png" style="height: 150px;">
+          <img class="logo" src="gaia.png" style="height: 150px" />
         </div>
         <div id="pontosPersonagem">
-          <div >
+          <div>
             <table>
               <th>Nome do Ponto</th>
               <th>Maximo</th>
@@ -247,7 +247,7 @@
               </tr>
             </table>
 
-            <table style="margin-top: 20px;">
+            <table>
               <th>Movimentação</th>
               <th>Bloqueio</th>
               <tr>
@@ -256,7 +256,7 @@
               </tr>
             </table>
 
-            <table style="margin-top: 20px;">
+            <table>
               <thead>
                 <th scope="row" colspan="1" wid>Parametros</th>
               </thead>
@@ -270,10 +270,9 @@
                 <tr>
                   <td>Brutalidade</td>
                   <td></td>
-                 
                 </tr>
                 <tr>
-                   <td>Destreza</td>
+                  <td>Destreza</td>
                   <td></td>
                 </tr>
                 <tr>
@@ -283,7 +282,7 @@
               </tfoot>
             </table>
 
-            <table style="margin-top: 20px;">
+            <table>
               <thead>
                 <th scope="row" colspan="1" wid>Conhecimentos</th>
               </thead>
@@ -297,10 +296,9 @@
                 <tr>
                   <td>con. Místico</td>
                   <td></td>
-                 
                 </tr>
                 <tr>
-                   <td>Exploração</td>
+                  <td>Exploração</td>
                   <td></td>
                 </tr>
                 <tr>
@@ -314,15 +312,16 @@
                 <tr>
                   <td>Intimidação</td>
                   <td></td>
-                 
                 </tr>
                 <tr>
-                   <td>Intuição</td>
+                  <td>Intuição</td>
                   <td></td>
                 </tr>
                 <tr>
                   <td>Medicina</td>
                   <td></td>
+                </tr>
+
                 <tr>
                   <td>Percepção</td>
                   <td></td>
@@ -330,10 +329,9 @@
                 <tr>
                   <td>Performace</td>
                   <td></td>
-                 
                 </tr>
                 <tr>
-                   <td>Religião</td>
+                  <td>Religião</td>
                   <td></td>
                 </tr>
                 <tr>
@@ -349,8 +347,10 @@
                   <td></td>
                 </tr>
                 <tr>
-                  <td style="background-color: #562d0b;   color: #cecece;">Especializações: </td>
-                  <td style="background-color: #562d0b;   color: #cecece;"></td>
+                  <td style="background-color: #562d0b; color: #cecece">
+                    Especializações:
+                  </td>
+                  <td style="background-color: #562d0b; color: #cecece"></td>
                 </tr>
               </tfoot>
             </table>
@@ -370,19 +370,156 @@
                 <td></td>
               </tr>
             </table>
-        </div>
+          </div>
 
+          <div class="botao">
+            <button>Ações</button>
+            <button>Inventário</button>
+            <button onclick="visualizarC()">Close</button>
+          </div>
+        </div>
+      </div>
+      <!--! Visualizar Ficha Criatura-->
+      <div id="div-visualizarCriatura">
+        <div class="informacoesBasicas">
+          <div class="informacoesJogador">
+            <p>Nome da Criatura:</p>
+          </div>
+          <img class="logo" src="gaia.png" style="height: 150px" />
+        </div>
+        <div id="parametrosCriatura">
+          <table>
+            <th>Parametro</th>
+            <th>Valor</th>
+
+            <tr>
+              <td>Pontos de Vida</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>PV Temporário</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>Pontos de Energia</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>Movimentação</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>Dificuldade</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>Percepção Passiva</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>Ataque Fisico</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>Ataque Mágico</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>Livro dos Seres</td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
         <div class="botao">
           <button>Ações</button>
           <button>Inventário</button>
-          <button onclick="visualizarC()">Close</button>
+          <button onclick="visualizarI()">Close</button>
         </div>
       </div>
 
-        <!--! Visualizar Ficha Criatura-->
-        <div class="div-visualizarCriatura">
-
+      <div id="div-rolagemDeDados">
+        <div id="selecaoDeDados">
+          <table>
+          <th>Tipo de Dado</th>
+          <th style="cursor: pointer;"><p onclick="AddDado()">Adicionar</p></th>
+          <th><a href="#">Excluir</a></th>
+          <tr>
+            <td>13</td>
+            <td style="cursor: pointer; color: #cecece;"><p onclick="AddDado()">+</a> </td>
+            <td> <a href="#">-</a> </td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td style="cursor: pointer; color: #cecece;"><p onclick="AddDado()">+</a> </td>
+            <td> <a href="#">-</a> </td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td style="cursor: pointer; color: #cecece;"><p onclick="AddDado()">+</a> </td>
+            <td> <a href="#">-</a> </td>
+          </tr>
+          </table>
         </div>
+        <table>
+          <th>Tipo de Dado</th>
+          <th>Valor Retirado</th>
+          <tr>
+            <td>13</td>
+            <td>  </td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>  </td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>  </td>
+          </tr>
+          </table>
+      </div>
+
+      <div id="inventario">
+        <div class="informacoesInventario">
+          <div class="informacoesJogador">
+          <p>Personagem: </p>
+          </div>
+          <img class="logo" src="fox-folk.png" style="height: 150px;">
+        </div>
+
+        <table>
+          <th>Moedas de Platina</th>
+          <th>Moedas de Ouro</th>
+          <th>Moedas de Prata</th>
+
+          <tr>
+            <td>1</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+
+        <table>
+          <th>Nome do Item</th>
+          <th>Quantidade</th>
+
+          <tr>
+            <td></td>
+            <td>1</td>
+          </tr> 
+          <tr>
+            <td></td>
+            <td>1</td>
+          </tr>
+        </table>
+      </div>
     </section>
     <script src="scriptCombate.js"></script>
   </body>
