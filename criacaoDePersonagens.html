@@ -35,73 +35,382 @@
       </div>
       <form action="#">
         <div id="contCriarPersonagem">
-          <div class="imgPersonagem">
-            <img class="imgPersonagem" src="fox-folk.png" />
-          </div>
           <div id="div-preencherAtributos">
+            <div class="imgPersonagem">
+              <img
+                class="imgPersonagem"
+                src="fox-folk.png"
+                name="imagemPersonagem"
+              />
+            </div>
             <input
               class="preencher"
               type="text"
+              name="nomeJogador"
+              placeholder="Nome do Jogador"
+            />
+            <input
+              class="preencher"
+              type="text"
+              name="nomePersonagem"
               placeholder="Nome do Personagem"
             />
-             <select name="selecionarLegado" id="selecionarLegado">
-              <option value="legado1">Legado 1</option>
-              <option value="legado2">Legado 2</option>
-              <option value="legado3">Legado 3</option>
-              <option value="legado4">Legado 4</option>
-              <option value="legado5">Legado 5</option>
-              <option value="legado6">Legado 6</option>
-             </select>
-            
-            <select name="selecionarRaca" id="selecionarRaca">
-              <option value="valor1">Raça 1</option>
-              <option value="valor2">Raça 2</option>
-              <option value="valor3">Raça 3</option>
-              <option value="valor4">Raça 4</option>
-              <option value="valor5">Raça 5</option>
-              <option value="valor6">Raça 6</option>
-              <option value="valor7">Raça 7</option>
-              <option value="valor8" >outro</option>
-            </select>
-          <div class="div-pontosGerais">
-            <label for="PV">Pontos de Vida: </label>
-            <input type="text" id="PV" class="pontosGerais">
-            
-            <label for="PE">Pontos de Energia: </label>
-            <input type="text" id="PE" class="pontosGerais">
+            <div class="selecao">
+              <select name="selecionarLegado" id="selecionarLegado">
+                <option value="legado1">Eanólia</option>
+                <option value="legado2">Drakar</option>
+                <option value="legado3">Drunar</option>
+                <option value="legado4">Krabesh</option>
+                <option value="legado5">Narzepion</option>
+                <option value="legado6">Vértonie</option>
+                <option value="legado6">Selecionar</option>
+              </select>
 
-            <label for="PdA">Pontos de Aprendizado</label>
-            <input type="text" id="PdA" class="pontosGerais">
-          </div>
+              <select name="selecionarRaca" id="selecionarRaca">
+                <option value="valor1">Alraunes</option>
+                <option value="valor2">Elfos</option>
+                <option value="valor3">Minotauros</option>
+                <option value="valor4">Netunes</option>
+                <option value="valor5">Anões</option>
+                <option value="valor6">Daevas</option>
+                <option value="valor7">Ursars</option>
+                <option value="valor1">Valdraks</option>
+                <option value="valor3">Humanos</option>
+                <option value="valor4">Delahks</option>
+                <option value="valor5">Draenuns</option>
+                <option value="valor6">Kitaris</option>
+                <option value="valor7">Orkrashs</option>
+                <option value="valor7">Inaris</option>
+                <option value="valor1">Seikos</option>
+                <option value="valor2">Yuansus</option>
+                <option value="valor3">Zaokans</option>
+                <option value="valor4">Elementais</option>
+                <option value="valor5">Forjados</option>
+                <option value="valor6">Kahats'zas</option>
+                <option value="valor7">Vennélis</option>
+                <option value="valor8">Selecionar</option>
+              </select>
+            </div>
 
-          <div id="divChecks">
-            <div id="exaustao">
-            <p id="exaustao">Exaustao</p>
-            <input type="checkbox" name="checkExaustao1" id="checkExaustao1">
-            <input type="checkbox" name="checkExaustao2" id="checkExaustao2">
-            <input type="checkbox" name="checkExaustao3" id="checkExaustao3">
-            <input type="checkbox" name="checkExaustao4" id="checkExaustao4">
-            <input type="checkbox" name="checkExaustao5" id="checkExaustao5">
-          </div>
-          <div id="div-dadosDeMorte">
-          
-            <div id="div-dadiva">
-              <p id="p-dadiva">Dádiva</p>
-              <input type="checkbox" name="checkDadiva" id="checkDadiva1">
-              <input type="checkbox" name="checkDadiva" id="checkDadiva2">
+            <div class="atributos">
+              <table>
+                <thead>
+                  <th scope="row" colspan="1" wid>Parametros</th>
+                </thead>
+                <tfoot>
+                  <th>Nome</th>
+                  <th>Valor</th>
+                  <tr>
+                    <td>Precisão</td>
+                    <td>
+                      <input
+                        class="preencherAtributos"
+                        type="text"
+                        name="precisao"
+                        id="precisao"
+                        placeholder="Digite o valor"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Brutalidade</td>
+                    <td>
+                      <input
+                        class="preencherAtributos"
+                        type="text"
+                        name="brutalidade"
+                        id="brutalidade"
+                        placeholder="Digite o valor"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Destreza</td>
+                    <td>
+                      <input
+                        class="preencherAtributos"
+                        type="text"
+                        name="destreza"
+                        id="destreza"
+                        placeholder="Digite o valor"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Agilidade</td>
+                    <td>
+                      <input
+                        class="preencherAtributos"
+                        type="text"
+                        name="agilidade"
+                        id="agilidade"
+                        placeholder="Digite o valor"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Canalização</td>
+                    <td>
+                      <input
+                        class="preencherAtributos"
+                        type="text"
+                        name="canalizacao"
+                        id="canalizacao"
+                        placeholder="Digite o valor"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Arcanismo</td>
+                    <td>
+                      <input
+                        class="preencherAtributos"
+                        type="text"
+                        name="arcanismo"
+                        id="arcanismo"
+                        placeholder="Digite o valor"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Espírito</td>
+                    <td>
+                      <input
+                        class="preencherAtributos"
+                        type="text"
+                        name="espirito"
+                        id="espirito"
+                        placeholder="Digite o valor"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Vigor</td>
+                    <td>
+                      <input
+                        class="preencherAtributos"
+                        type="text"
+                        name="vigor"
+                        id="vigor"
+                        placeholder="Digite o valor"
+                      />
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+
+              <table>
+                <thead>
+                  <th scope="row" colspan="1" wid>Conhecimentos</th>
+                </thead>
+                <tfoot>
+                  <th>Nome</th>
+                  <th>Valor</th>
+                  <tr>
+                    <td>Carisma</td>
+                    <td>
+                      <input
+                        class="preencherAtributos"
+                        type="text"
+                        name="carisma"
+                        id="carisma"
+                        placeholder="Digite o valor"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>con. Místico</td>
+                    <td>
+                      <input
+                        class="preencherAtributos"
+                        type="text"
+                        name="mistico"
+                        id="mistico"
+                        placeholder="Digite o valor"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Exploração</td>
+                    <td>
+                      <input
+                        class="preencherAtributos"
+                        type="text"
+                        name="exploracao"
+                        id="exploracao"
+                        placeholder="Digite o valor"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Furtividade</td>
+                    <td>
+                      <input
+                        class="preencherAtributos"
+                        type="text"
+                        name="furtilidade"
+                        id="furtilidade"
+                        placeholder="Digite o valor"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>História</td>
+                    <td>
+                      <input
+                        class="preencherAtributos"
+                        type="text"
+                        name="historia"
+                        id="historia"
+                        placeholder="Digite o valor"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Intimidação</td>
+                    <td>
+                      <input
+                        class="preencherAtributos"
+                        type="text"
+                        name="intimidacao"
+                        id="intimidacao"
+                        placeholder="Digite o valor"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Intuição</td>
+                    <td>
+                      <input
+                        class="preencherAtributos"
+                        type="text"
+                        name="intuicao"
+                        id="intuicao"
+                        placeholder="Digite o valor"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Medicina</td>
+                    <td>
+                      <input
+                        class="preencherAtributos"
+                        type="text"
+                        name="medicina"
+                        id="medicina"
+                        placeholder="Digite o valor"
+                      />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Percepção</td>
+                    <td>
+                      <input
+                        class="preencherAtributos"
+                        type="text"
+                        name="percepcao"
+                        id="percepcao"
+                        placeholder="Digite o valor"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Performace</td>
+                    <td>
+                      <input
+                        class="preencherAtributos"
+                        type="text"
+                        name="performace"
+                        id="performace"
+                        placeholder="Digite o valor"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Religião</td>
+                    <td>
+                      <input
+                        class="preencherAtributos"
+                        type="text"
+                        name="religiao"
+                        id="religiao"
+                        placeholder="Digite o valor"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Sobrevivência</td>
+                    <td>
+                      <input
+                        class="preencherAtributos"
+                        type="text"
+                        name="sobrevivencia"
+                        id="sobrevivencia"
+                        placeholder="Digite o valor"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Tecnologia</td>
+                    <td>
+                      <input
+                        class="preencherAtributos"
+                        type="text"
+                        name="tecnologia"
+                        id="tecnologia"
+                        placeholder="Digite o valor"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Vontade</td>
+                    <td>
+                      <input
+                        class="preencherAtributos"
+                        type="text"
+                        name="vontade"
+                        id="vontade"
+                        placeholder="Digite o valor"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: #562d0b; color: #cecece">
+                      Especializações:
+                    </td>
+                    <td style="background-color: #562d0b; color: #cecece"></td>
+                  </tr>
+                </tfoot>
+              </table>
             </div>
-            <p>X</p>
-            <div id="div-morte">
-              <input type="checkbox" name="checkMorte" id="checkMorte1">
-              <input type="checkbox" name="checkMorte" id="checkMorte2">
-              <p id="p-morte">Morte</p>
+            <div>
+              <textarea
+                name="anotacoesPersonagem"
+                id="anotacoes"
+                cols="30"
+                rows="10"
+              ></textarea>
             </div>
-          </div>
-          </div>
+            
+            <div id="addHabilidade" style="margin: auto;">
+              <div id="btn-addHabilidade">
+                <button class="criar">Criar</button>
+              </div>
+              <table>
+                <th>Habilidade</th>
+                <th>Descricao</th>
+
+                <tr>
+                  <td>Cone de Gelo</td>
+                  <td>Lança um cone de Gelo no alvo</td>
+                </tr>
+              </table>
+            </div>
+        <input class="criar" type="submit" value="Criar">
         </div>
-     
           </div>
-           </form>  
+      </form>
     </section>
     <script src="script.js"></script>
   </body>
